@@ -4,25 +4,23 @@ import { Router } from "express";
 
 const router = Router();
 
-router.get('/productos', (req, res) => {
-  res.send('Lista de productos');
+// Routes for 'citas' (dates/appointments)
+router.get('/citas', (req, res) => {
+    res.send('Lista de citas');
 });
 
-
-router.get('/productos/:id', (req, res) => {
-    res.send('Obteniendo un solo producto');
+router.get('/citas/:id', (req, res) => {
+    res.send('Obteniendo una sola cita');
 });
 
-
-router.post('/productos', (req, res) => {
-    res.send('Creando un nuevo producto');
+router.post('/citas', (req, res) => {
+    res.send('Creando una nueva cita');
 });
 
-router.put('/productos/:id', (req, res) => {
-    res.send('Actualizando un producto');   
-}
-);  
+router.put('/citas/:id', (req, res) => {
+    res.send('Actualizando una cita');
+});
 
-router.delete('/productos/:id', (req, res) => {
-    res.send('Eliminando un producto');
-});     
+router.delete('/citas/:id', (req, res) => {
+    res.send('Eliminando una cita');
+});
