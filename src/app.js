@@ -1,8 +1,8 @@
 import express from 'express';
-import productsRoutes from './routes/products.routes.js';
+import citaRoutes from './routes/cita.routes.js';
 
 const app = express()
 
-app.use(productsRoutes)
+app.use(citaRoutes)
 
 export default app;
