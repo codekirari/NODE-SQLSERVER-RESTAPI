@@ -3,6 +3,7 @@
 
 --   // en sqlserver no sirve AUTO_INCREMENT
 
+USE clinicatest;
 
 CREATE TABLE Paciente (
     id_paciente INT PRIMARY KEY IDENTITY(1,1), 
