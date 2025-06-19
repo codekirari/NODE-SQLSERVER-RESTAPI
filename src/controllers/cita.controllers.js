@@ -1,7 +1,5 @@
 // import
 
-
-
 export const getCitas = (req, res) => {
     res.send('Lista de citas');
 };
